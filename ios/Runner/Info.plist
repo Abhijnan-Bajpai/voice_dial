@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+    <string>Speech recognition required for using voice instead of dial-pad</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone required to access the voice of the user to take digits as input</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
