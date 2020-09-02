@@ -1,7 +1,7 @@
 import 'package:speech_to_text/speech_to_text.dart' as stt;
 import 'package:flutter/material.dart';
 import 'size_helper.dart';
-import 'package:url_launcher/url_launcher.dart' as UrlLauncher;
+import 'package:call_number/call_number.dart';
 
 class SpeechScreen extends StatefulWidget {
   @override
@@ -18,6 +18,11 @@ class _SpeechScreenState extends State<SpeechScreen> {
   void initState() {
     super.initState();
     _speech = stt.SpeechToText();
+  }
+
+  _initCall() async {
+    if (_text != null)
+      await new CallNumber().callNumber('+91' + _text);
   }
 
   @override
@@ -38,10 +43,9 @@ class _SpeechScreenState extends State<SpeechScreen> {
               onPressed: _listen,
               child: Icon(_isListening ? Icons.mic : Icons.mic_none),
             ),
-            FloatingActionButton(
-              onPressed: () => UrlLauncher.launch('tel:+91$_text'),
-              child: Icon(Icons.call),
-            )
+            FloatingActionButton(onPressed: _initCall,
+            child: Icon(Icons.call),
+            backgroundColor: Colors.green,)
           ],
         ),
       ),
@@ -85,5 +89,3 @@ class _SpeechScreenState extends State<SpeechScreen> {
     }
   }
 }
-
-
