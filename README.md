@@ -1,16 +1,8 @@
+
+
 # voice_dial
+
+https://user-images.githubusercontent.com/57059194/132934509-a6e0b5dc-5646-42b8-bce4-032c33000d8c.mp4
 
 A flutter application which allows the user to verbally dial a number
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
